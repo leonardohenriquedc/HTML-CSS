@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #6f480c;
+        }
+        header {
+            background-color: #ffffff;
+            border-color: black;
+            
+        }
+        header > nav {
+            display: none;
+            
+        }
+        header:hover > nav {
+            display: block;
+           
+        }
+
+        nav:hover > a {
+            color: blueviolet;
+            text-decoration: underline;
+        }
+
+        header > nav > a {
+            margin-right: 20px;
+            color: black;
+            text-decoration: none;
+            
+        }
+        
+        main {
+            background-color: white;
+        }
+        
+        section {
+            background-color: #6e6e6e;
+        }
+        article {
+            background-color: #909090;
+        }
+        footer {
+            background-color: black;
+            color: #ffffff;
+            text-align: center;
+            padding: 7px;
+            margin-top: 10px;
+        }
+        div#bola {
+            
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin: 20px auto;
+            border-radius: 50%;
+            position: relative;
+        }
+        div#bola > p {
+            margin: 0px; 
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            color: aquamarine;
+            text-decoration: underline;
+            font-size: 27px;
+            -webkit-text-stroke: 0.7px;
+            -webkit-text-stroke-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Grouping tags </h1>
+    <nav>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+    </header>
+    <main>
+        <section>
+            Noticias
+            <article>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, similique quaerat quia ex a aut debitis ullam quos aspernatur dolores quibusdam nobis voluptatem ducimus magnam dolorum deserunt enim incidunt unde.
+            </article>
+        </section>
+        
+    </main>
+    <footer>
+        Denver dzn
+    </footer>
+    <div id="bola">
+        <p>Denver</p>
+    </div>
+</body>
+</html>

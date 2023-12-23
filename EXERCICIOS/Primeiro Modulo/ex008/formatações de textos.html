@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de texto</title>
+    <style>
+        mark {background-color: rgb(6, 203, 187);}
+    </style>
+</head>
+<body>
+    <h1>Formatações principais (e mais basicas)</h1>
+    <h2>Negrito (Destaque)</h2>
+    <p>Nesta parte da aula iremos mostrar algumas formas de adicionar o negrito nas palavras: sendo uma dela a tag "b","/b como podemos ver no exemplo abaixo: <br> <b>O texto atual esta usando uma forma não semantica de adicionar o negrito, ou seja, ela não tem signifciado apenas forma.</b></p>
+    <p>Agora nesta frase iremos usar uma outra forma de usar o <strong>negrito</strong> sendo ela, a forma semântica. <br> Esta teg e a "strong","/strong" e uma tag que visualmente no site não muda nada porem ela tem um significado. Ela quer dizer <strong>DESTAQUE</strong>  ou seja, a frase que foi colocada em <strong>negrito com essa tag tem o significado de destaque.</strong> </p>
+    <h2>Italico (enfâse)</h2>
+    <p>Aqui temos um termo em <i>italico</i> não semântico, ou seja, temos apenas a forma e não o significado. <br> Para usarmos a forma semantica do mesmo italico usamos "em","/em" que significa Enfase em ingles <em>(obiviamente está abrevidado)</em></p>
+    <h2>Marcações de textos</h2>
+    <p>Marcações de textos tem como objetivo ou seja SEMÂNTICA colocar em destaque uma determinada palavra ou frase sendo usada pela tag "mark". <br>Segue e um exemplo: <mark>O destaque tem como objetivo apenas MARCAR não podendo ser alterado sua cor (não em html mas sim em CSS).</mark> <br> Podendo ser trocada sua cor atraves da implementação da funçao "style" dentro da teg "mark". <br>
+    segue o exemplo: <mark>Exemplo de mundança de cor.</mark></p>
+    <h3>Outras formas de mudar a cor do marcador de texto</h3>
+    <p>Outra forma de mudar a cor do marcador de texto seria criar um seletor na area de configuração do site ("head") sendo assim: <br> "mark {}" dentro das chaves usaria do comando background-color e selecionaria a cor desejada, sendo assim validando ela para todas as outras marcações na area "body".</p>
+    <h2>Texto Deletado: </h2>
+    <p>Para usarmo a linha que corta uma palavra dando ela o sginificado de que e irrelevante para o conteúdo em si usamos a teg "del": <br> <del>Temos aqui um exemplo da teg</del></p>
+    <h2>Texto inserido </h2>
+    <p>Para usarmos o sublianhamento temos duas formas novamente avisando uma semantica e outra não semantica: <br> Para usarmos a semantica usamos a teg "ins": <br><ins>Temos aqui uma frase com a teg "ins"</ins><br><u>agora temos uma frase com a teg "i" que é a forma não semantica</u></p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Uma teg que usamos hoje esta em "desuso" e pode ate mesmo ser excluida pela propria w3c, <big>no caso e a teg "big"</big>. <br><small>E para diminuir textos usamos a teg "small"</small></p>
+    <p>Lembrando que, a mundança do tamanho do texto e uma de forma ou seja deve ser feita pela CSS.</p>
+    <h2>Texto sobre-escrito</h2>
+    <p>Textos sobre-escrito e basicamente palavras ou frase que ficam "fluando" com relação ao texto normal sendo assim usado para mostrada equações por exemplo: x^2+2 se lê x ao quadrado mais dois podendo ser escrita assim x<sup>2</sup>+2 </p>
+    <h2>Texto sob-escrito</h2>
+    <p>Ja o texto sob-escrito e o oposto do sobre-escrito sendo assim a palavra fica abaixo da linha de referecnia do texto normal, sendo assim usada bastante para exemplicar atomos quimico como por exemplo H2O sendo usada a teg "sub" ela fica: H<sub>2</sub>O</p>
+</body>
+</html>

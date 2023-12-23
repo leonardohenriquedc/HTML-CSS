@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoclasses</title>
+    <style>
+        body { font-family: Arial, Helvetica, sans-serif;}
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: #ff7fee;
+        }
+        a:hover{
+            color: brown;
+            text-decoration: underline;
+        }
+        a:active {
+            color: lightslategray;
+        }
+        a::after {
+            content: " [link]";
+            color: black;
+        }
+        a::before{
+            content: "✔️ ";
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://instagram.com/denver_dzn" target="_blank">meu insta</a></li>
+        <li><a href="https://facebook.com/leonardohnerique" target="_blank">meu face</a></li>
+        <li><a href="https://youtube.com/jovensdenegocios" target="_blank">youtube</a></li>
+    </ul>
+</body>
+</html>

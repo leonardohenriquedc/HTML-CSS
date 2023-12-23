@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas / organização</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>Temos atualmente no HTML 5 uma forma de organizar listas de forma automatica, mais especificamente falando a enumeração automatica dos itens. <br>Para isso temos a teg "ol" que dentro dela adicionamos outra teg nessa vez seguinda do item que deseja coloca na lista a teg e "li", onde para cada item se coloca dentro de um "li". <br>Segue um exemplo:</p>
+    <ol>
+        <li>Frango</li>
+        <li>Picanha</li>
+        <li>Lasanha</li>
+    </ol>
+    <p>Podemos também definir a forma que será enumerado a lista, se você quiser ela em algarismos romanos ou em letras podemos adicionar a teg "type" dentro da teg "ol", logicamente se a pessoa deseja iniciar de outro valor que não por exemplo "1" no caso da enumeração numerica, pode-se adicionar junto de type uma teg "start" e colocar a parte de qual valor deseja prosseguir. <br>Segue abaixo um exemplo:</p>
+    <ol type="I" start="10"> <!-- 1, A, a, I, i-->
+        <li>Frango</li>
+        <li>Lasanha</li>
+        <li>Peru</li>
+        <li>Batata</li>
+    </ol>
+    <p><strong>Lembrando que: a teg "start" deve conter apenas numeros. <br> Ex: Se for uma enumeração em letras e deseja iniciar a partir da Letra "E" você não pode colocar literalmente a letra e sim a numeração que ela se encontra, ou seja a letra "E" e a 5ª letra a partir do "A" logo você irar colocar o numero cinco.</strong></p>
+    <h2>Listas não Ordenadas</h2>
+    <p>Podemos também fazer listas não ordenas em sequência, sendo ela a teg "ul". Segue exemplo: </p>
+    <ul>
+        <li>Pão</li>
+        <li>Manteiga</li>
+        <li>Frango</li>
+        <li>Lasanha</li>
+    </ul>
+    <p>Podemos também trocar o simbolo de sequencia também adicionando a teg "type" dentro de "ul".</p>
+    <ul type="circle"> <!-- circle, disc e square-->
+        <li>Lasanha</li>
+        <li>Pão</li>
+        <li>Frango</li>
+        <li>Manteiga</li>
+    </ul>
+    <h2>Adicionando listas dentro de listas</h2>
+    <p>As vezes precisamos adicionar listas para organizar varias coisas nas nossas tarefas, mas e quando precisamos fragmentar um item de uma lista e fazer dentro deste item outra lista? E oq vamos fazer <br> Para adiocionar uma lista dentro de outra e muito simples basta usar um "ol" ou "ul" adicionar um "li" (no caso o item) e dentro desse "li" adicionar outro "ol" ou "ul". <br> Ex: </p>
+    <ol>
+        <li>Liguagens de programação</li>
+        <ul type="square">
+            <li>Javascript</li>
+            <li>PHP</li>
+            <li>Python</li>
+        </ul>
+        <li>Liguagens de desenvolvimento de sites</li>
+        <ul type="square">
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    </ol>
+    <h2>Listas de definição</h2>
+    <p>Listas de definição servem como se fossem um "dicionario". Se usa a teg "dl" para iniciar a lista (e fecha-la obviamente), dentro da teg temos o termo coma teg "dt" e temos temos a definição do termo com a teg "dd". <br>Ex:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Em inglês: HyperText Markup Language. <br>Em português:Liguangem de marcação de hipertexto.</dd>
+        <dt>CSS</dt>
+        <dd>Liguangem de marcação de designer de um site</dd>
+    </dl>
+</body>
+</html>

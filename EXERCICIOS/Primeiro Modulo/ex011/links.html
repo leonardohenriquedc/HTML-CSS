@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+<body>
+    <h1>Links Externo</h1>
+    <p>Links externo e quando um link ao qual você colocou no seu site te leva para um outro site que não o mesmo do atual.</p>
+    <p>Para adicionarmos um link a uma frase ou para palavra (tipo aquelas que fica azul em varios sites), usamos a teg "a". <br>Ex: </p>
+    <p>Este <a href="https://youtube.com/cursoemvideo/">canal do youtube e muito bom.</a></p>
+    <p>Temos um problema no site acima, pois quando clicamos no link o site ao qual está no link sobrepos sobre o nosso site logo a chance do usuario final nunca mais voltar ao seu site e muito grande para isso usamos dentro da teg "a" a função "target="_blank" que diz para o navegador criar uma pagina em branco para o link mantendo assim a sua pagina aberta. <br> Ex: </p>
+    <p> Você pode acessar o <a href="https://youtube.com/gaules" target="_blank" rel="externo">canal do youtube</a> para mais informações.</p>
+    <h1>Usando Links Internos</h1>
+    <p>Links internos são aqueles que fazem parte do mesmo servidor, diretorio ou pertence a você mesmo. Nestes casos não e nescessario usar o "target="_blank"" para criar outra guia para o link afinal, o usuario tecnicamente não saiu do seu servidor. </p>
+    <P>Ex: <br> se quiser saber mais sobre lista <a href="Listas (exemplo).html" rel="next">click aqui</a></P>
+    <p>Temos a teg "rel" dentro da teg "a" ela serve para os mecanismos de buscar se localizarem com mais facilidade dentro do da estrutura do nosso site, usamos sempre que tem um link externo a nomeclatura external dentro da teg "rel" e tem outras como <strong>next</strong> para dizer ao mecanismo de busca que aquele link e "a proxima pagina" (geralmente usado para links interno), temos <strong>prev</strong> que indica que aquela pagina e a "anterior", e temos as <strong>nofollow</strong> usada para links que não tem o seu "aval" pode se dizer assim e tem o <strong>dofollow</strong> usada geralmente para links patrocinados.</p>
+    <p><strong>UM AVISO IMPORTANTE:</strong> E sempre bom aprender linux pois a maioria dos servidores que hospedam site usam este tipo de sistema operacional. <br> Se por acaso vc quiser colocar um link interno que não esteja na pasta do site principal se for preciso voltar uma pasta use "../" se caso precisar avancar obviamente use "/"   </p>
+    <h1>Links para downloads</h1>
+    <p>Para usar um link para download usamos a mesma teg "a" e adicionamos o arquivo que queremos porem, dentro da teg temos que adiciona a função "download="arquivo"" e o type="" para o navegador reconhe-los como dowlnloads. <br>Ex: </p>
+    <p>Se quiser baixar o meu tcc <a href="../../../../../Contabilidade_Basica_Facil_Osni_Moura_Ri.pdf" download="../../../../../Contabilidade_Basica_Facil_Osni_Moura_Ri.pdf" type="application/pdf">clique aqui</a> </p>
+    <p>Se quiser em zip <a href="exemplo.zip" download="exemplo.zip" type="application/zip">clique aqui</a></p>
+</body>
+</html>

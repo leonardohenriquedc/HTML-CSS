@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+div > p {
+    display: none;
+}
+div:hover > p {
+    display: block;
+    background-color: rgb(80, 74, 71);
+    color:#ffffff
+    
+}
+div {
+    background-color: lightslategray;
+    text-align: center;
+    border: 1px solid black;
+    width: 100px;
+}
+
+.pp {
+    display:none;
+}
+div#tt:hover > p.pp {
+    background-color: aquamarine;
+    color: blue;
+    border-radius: 1px;
+    border-color: black;
+    border-style: solid;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 2em;
+    width: 90px;
+}

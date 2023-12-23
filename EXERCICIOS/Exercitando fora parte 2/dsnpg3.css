@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#titulo {
+    background-image: linear-gradient(to right, #5B63FC, #19B5FF);
+    width: 840px;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+#titulo > h1 {
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    
+}
+
+#mm1 {
+    width: 100px;
+}
+
+#bt2 {
+    background-color: #2BC1FC;
+    width: 50px;
+    height: 20px;
+    margin:auto;
+    padding-top: 2px;
+    padding-right: 5px;
+    padding-left: 15px;
+    border-radius: 2px;
+}
+
+#bt2 > a{
+   text-align: center;
+    color: black;
+}

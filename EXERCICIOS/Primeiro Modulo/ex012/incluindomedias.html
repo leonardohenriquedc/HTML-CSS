@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+    <style>
+        body { background-color: aquamarine;}
+        mark {background-color: rgb(85, 85, 195);}
+    </style>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Uma imagem dinâmica e aquela que adapta a quantidade de pixel que e disponibilizada pelo navegador, fazendo assim com que o site, carregue imagens diferentes para cada tipo de dispositivo. <br> Para isso usamos a teg "picture" e dentro dela adicionamos a função "source:media:type" e configuramos a quantidade de pixels nescessaria para uma mudança de imagem.</p>
+    <p>Ex:</p>
+        <picture>
+            <source media="(max-width: 750px )" srcset="imagens/img-p.jpg" type="image/jpg">
+            <source media="(max-width: 1050px  )" srcset="imagens/img-m.jpg" type="image/jpg">
+            <img src="imagens/img-g.jpg" alt="foto flexivel">
+        </picture>
+        <p><strong>LEMBRANDO:</strong> Para ateg funcionar perfeitamente tem que haver uma ordem obrigatoria na construção da mesmo sendo a seguinte: A <strong>primeira</strong> "source:media:type" com a configuração para se flexibilizar para a menor quantidade de pixels possivel (geralmente para dispositivos moveis), a <strong>segunda</strong> "source:media:type" com a configuração para flexibilizar a imagem para dispositivos com a quantidade de pixels media (geralmente tablets) e por <strong>ultimo</strong> a teg "img" coma imagem caso nenhuma das condições acima seja verdadeira logicamente nessa sequencia a imagem que abrirá no caso de notebooks e outros dispositivos maiores como televisoes será a que se encontra na teg "img".</p>
+        <p>Você pode adicionar varias condições para diferentes quantidades de pixels desde que siga essa logica "do menor, para o maior"</p>
+        <h2>Adicionando audio</h2>
+        <p>Em alguns temos a opção de ver a materia ou o conteudo em si atraves de audio, vamos usar esta opção atraves da teg "audio"</p>
+        <audio src="midia/hungriadtl.mp3" controls autoplay ></audio>
+        <p>Após adicionar a teg e colocar o audio temos que adicionar as funções "controls" e "autoplay" pois alguns navegadores não aceitam somente o "autoplay" e, muitas vezes nem se quer o audio em mp3, mas se vc quiser que seu site reproduza um audio em 100% dos navegadores e preciso ter o mesmo tambem em <strong>MP3</strong>, <strong>WAV</strong> e <strong>OGG</strong> garantindo assim que todos os navegadores iram aceitas o seu audio e reproduzi-lo normalmente </p>
+        <p>Há tambem uma forma de conseguir compatibilidade de forma mais simples, que basicamente abrir a teg "audio" e dentro dela adicionar uma "source:src" e assim adicinar o formatos que você tem do audio que deseja colocar. <br> Ex: </p>
+        <audio preload="metadata" controls autoplay >
+            <source src="midia/hungriadtl.mp3" type="audio/mpeg">
+        </audio>
+        <p><mark><strong>ATENÇÃO: </strong>a ordem e muito importante em html</mark></p>
+    <p>Pois se o navegador do usuario não conseguir carregar o primeiro arquivo ele pular para o segundo e assim por diante. Uma informção e que dentro da teg "audio"  em importante colocar as funções "controls" e "autoplay" para que o navegador e o usuario tenha controle sobre a reprodução do audio.</p>
+    <h1>Videos</h1>
+    <h2>Adicionando videos</h2>
+    <p>Para adicionar videos e também muito simples, usamos a teg "video" e adicionamos o video, <strong> você pode reduzir o tamanho da da quantida de espaço que o video pode ocupar na tela do navegador atraves da função "width" + a quanitidade de pixels que deseja que o video ocupe </strong></p>
+    <p>Ex: </p>
+    <video src="midia/teste video.mp4" width="200" controls ></video>
+    <p><mark><strong>ATENÇÃO: </strong> não esqueça de adicionar também a função "controls".</mark></p>
+    <p>Obiviamente não devemos colocar somente um video em apenas um formatos pois assim como nas imagens e audios, nem todos os navegadores são compativeis com o formato que você coloca no seu site, para isso devemos criar uma teg "video" e adicionar a "source:src" e adicionar os videos em varios formatos, lembrando que e uma source para cada video, <strong>A ORDEM DE EXECUÇÃO</strong> e fundamental no video, por tanto coloque o formato que mais tem compatibilidade com a maioria dos navegadores como google, safari etc. </p>
+    <video width="500" poster="imagens/baixados (3).jpeg" controls>
+        <source src="midia/mylivewallpapers-com-Galaxy-Stars-FHD.mp4" type="video/mp4">
+        <source src="midia/teste-video.ogv" type="video/ogg">
+        <p>Seu navegador não compativel com o formato de video. </p>
+    </video>
+    <p>Se por ventura quiseres adicionar uma imagem de thumb ao seu video adicione a função "poster" e coloque dentro dela a imagem que deseja </p>
+    <h2>Adicionando videos do Youtube</h2>
+    <p>Uma forma de economizar tranferencia de dados e adicionando videos de sites que tem como principal foco justamente a ospedagem de video.</p>
+    <p>Para isso, basta você ir no youtube buscar o video que você deseja e compartilhar e depois apertar em "imcorporar" assim ele vai criar um codigo html pra você adicionar no seu site. </p>
+    <p>Ex: </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Cpvgc1NeYqo?si=VKrCqUkG3KxFzQ7T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

@@ -1,0 +1,112 @@
+@charset "TUF-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #c4d3f0, #8498BF);
+}
+
+/*h1 {
+    border-radius: 5px;
+    width: 600px;
+    margin: 40px auto 15px auto;
+    font-size: 46px;
+    text-align: center;
+    background-image: linear-gradient(to left, #1c89e857 50%, #2f98ab6a 80%);
+}
+h1 {
+    background-image: linear-gradient(to right, #1980E6, #193FE6);
+    height: 100px;
+    width: 800px;
+    text-align: center;
+    justify-content: end;
+    justify-items: center;
+
+}*/
+.ctt {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    width: 840px;
+    height: 10em;
+    position: relative;
+    background-image: linear-gradient(to right, #193FE6, #1980E6);
+}
+.ctt > h1 {
+    margin: 0;
+    top:50%;
+    left: 50%;
+    position:absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+}
+h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+main {
+    background-color: white;
+    border-radius: 10px;
+    width: 800px;
+    padding: 2%;
+    margin: left;
+    box-shadow: 5px 5px 12px #143aaead;
+}
+
+a {
+    color: #0077ff;
+    -webkit-text-stroke: 0.3px;
+    -webkit-text-stroke-color: black;
+    text-decoration: none;
+}
+
+.rdssc {
+    background-color: #6E14DB;
+    font: bolder 3em arial, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    width: 550px;
+    border-radius: 20px;
+}
+
+
+#bt1 {
+    background-color: #2BC1FC;
+    width: 150px;
+    height: 20px;
+    margin:auto;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-left: 15px;
+    border-radius: 2px;
+    text-align: center;
+}
+
+#bt1 > a{
+    color: black;
+}
+
+.links {
+    display: inline-block;
+    background-color:#0a0f68;
+    width: 80px;
+    height: 40px;
+    margin: 0px;
+    text-align: center;
+    position: relative;
+    padding-top:2px;
+    
+}
+
+.img1 {
+    margin: 0px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
