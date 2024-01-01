@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>centralizando imagens</title>
+    <style>
+        div{
+            position: relative;
+            background-color: rgb(204, 22, 22);
+            background-image: url('imagens/target001.png');
+            height: 600px;
+            background-size: 100% 100%;
+            
+        }
+        article {
+            position: absolute;
+            background-color: yellow;
+            height: 200px;
+            width: 200px;
+            background-image: url('imagens/target001.png');
+            background-size: 100% 100%; 
+            top: 50%;
+            left: 50%; 
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <article>
+
+        </article>
+    </div>
+</body>
+</html>
