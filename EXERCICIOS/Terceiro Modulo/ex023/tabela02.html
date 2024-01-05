@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 300px;
+            
+        }
+
+        thead {
+            height: 50px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            height: 30px;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightblue;
+        }
+
+        thead, tfoot {
+            background-color: lightskyblue;
+            
+        }
+
+        caption {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+
+    <table>
+        <caption>Estudos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>49 757 049</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>49 651 986</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>63 458 632</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>45 555 656</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>98 494 646</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>98 643 321</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th scope="row">Toda de habitantes</th>
+            <td>2010</td>
+        </tfoot>
+    </table>
+</body>
+</html>
