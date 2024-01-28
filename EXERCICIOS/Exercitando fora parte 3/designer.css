@@ -6,17 +6,19 @@
 }
 
 header {
-    width: 100%;
+    width: 100vw;
     height: 200px;
     background-color: #14C4DE;
     position: relative;
+    
 }
 
 header > #RS {
     background-color: #14DE71;
-    width: auto;
+    width: 100vw;
     text-align: center;
     position: relative;
+    display: inline-block;
     padding: 10px;
 }
 
@@ -24,19 +26,21 @@ header > #RS {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 2vh;
     margin-right: 60px;
 }
 
 .cbc1, .cbc2 {
     
     text-align: center;
-    font-size: 3em;
+    font-size: 3vh;
+    margin: 0px;
 }
 
 .cbc1 {
     text-decoration: underline;
-    font-size: 4em;
+    font-size: 4vh;
+    margin-top: 30px;
 }
 
 .cbc2 {
@@ -66,6 +70,8 @@ header > #RS {
     padding: 20px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    margin: 0px;
+    display: inline-block;
 }
 
 #menu {
@@ -73,6 +79,7 @@ header > #RS {
     background-color: #0d899c;
     text-align: justify;
     padding: 10px;
+    width: 100vw;
 }
 
 #menu > h2 {
@@ -85,11 +92,10 @@ header > #RS {
 
 #conteudo {
     background-color: #0d899c;
-    position:relative;
-    margin: 0px;
-    top: 50%;
-    left: 30%;
-    height: 500px;
-    max-width: 1000px;
-    min-width: 500px;
+    display: inline-block;
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    margin-left: 20px;
+    text-align: center;
 }
