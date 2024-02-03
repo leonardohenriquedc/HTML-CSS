@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>
+        Iniciando um mini formulario para testar um projeto
+    </h1>
+
+    <form action="enviar">
+        <p>
+            Nome: 
+                <input type="text" name="nome" id="nome">
+        </p>
+        <p>
+            Idade: 
+                <input type="text" name="idade" id="idade">
+        </p>
+        <p>
+            Qual notebook você mais gosta: 
+                <select name="note" id="note" size="5">
+                    <option value="Macbooks" id="op1">
+                        Macbooks
+                    </option>
+                    <option value="NoteGM" id="op2">
+                        Notebook Gamer
+                    </option>
+                    <option value="NotePG" id="op3">
+                        Notebook Pro-Gamer
+                    </option>
+                    <option value="NoteP" id="op4">
+                        Notebook de Produtividade
+                    </option>
+                    <option value="Note" id="op5">
+                        Notebook Comum
+                    </option>
+                </select>
+
+                <div id="res1"></div>
+
+        </p>
+        <p>
+            <input type="submit" value="Enviar" id="Enviar">
+        </p>
+    </form>
+    <section>
+        <p id="res">
+        
+        </p>
+    </section>
+
+    <script src="ins.js"></script>
+</body>
+</html>
