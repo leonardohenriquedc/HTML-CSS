@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="Teste.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="email">
+                    Email:
+                </label>
+                <input type="email" name="email" id="email" required autocomplete="email">
+            </p>
+            <input type="tel" name="tel" id="tel" required placeholder="Digite seu numero" autocomplete="tel" pattern="^[0-9]{4}-[0-9]{4}$">
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
