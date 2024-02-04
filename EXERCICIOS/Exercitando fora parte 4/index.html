@@ -3,56 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Simples</title>
+    <title>Cardapio Digital</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Iniciando um mini formulario para testar um projeto
-    </h1>
-
-    <form action="enviar">
-        <p>
-            Nome: 
-                <input type="text" name="nome" id="nome">
-        </p>
-        <p>
-            Idade: 
-                <input type="text" name="idade" id="idade">
-        </p>
-        <p>
-            Qual notebook você mais gosta: 
-                <select name="note" id="note" size="5">
-                    <option value="Macbooks" id="op1">
-                        Macbooks
-                    </option>
-                    <option value="NoteGM" id="op2">
-                        Notebook Gamer
-                    </option>
-                    <option value="NotePG" id="op3">
-                        Notebook Pro-Gamer
-                    </option>
-                    <option value="NoteP" id="op4">
-                        Notebook de Produtividade
-                    </option>
-                    <option value="Note" id="op5">
-                        Notebook Comum
-                    </option>
-                </select>
-
-                <div id="res1"></div>
-
-        </p>
-        <p>
-            <input type="submit" value="Enviar" id="Enviar">
-        </p>
-    </form>
-    <section>
-        <p id="res">
+    <header>
+        <h1>Cardapio do Dia</h1>
+    </header>
+    <main>
+        <section>
+            <h2>
+                Proteinas
+            </h2>
+            <table>
+                <thead>
+                    <th colspan="7">
+                        Carnes Vermelhas:
+                    </th>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alcatra</td>
+                            <td>Picanha</td>
+                            <td>Maminha</td>
+                            <td>Carne Moida</td>
+                            <td>Figado</td>
+                            <td>Costelas</td>
+                        </tr>  
+                    </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th colspan="4">
+                        Carnes Brancas
+                    </th>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Frango Frito</td>
+                            <td>Frango Empanado</td>
+                            <td>Frango Guisado</td>
+                            <td>Frango Assado</td>
+                        </tr>
+                    </tbody>
+            </table>
+            <table>
+                <thead>
+                    <th colspan="7">
+                        Peixes
+                    </th>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>Tambaqui Assado</td>
+                            <td>Tambaqui Cozido</td>
+                            <td>Piranha Frita</td>
+                            <td>Bodó</td>
+                            <td>Pirarucú Desfiado</td>
+                            <td>Pirarucú Cozido</td>
+                            <td>Pacú</td>
+                        </tr>
+                    </tbody>
+            </table>
+        </section>
         
-        </p>
-    </section>
+    </main>
+    <footer>
 
-    <script src="ins.js"></script>
+    </footer>
 </body>
 </html>

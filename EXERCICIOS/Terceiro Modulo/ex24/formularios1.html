@@ -8,14 +8,21 @@
 </head>
 <body>
     <h1>Estudando formularios</h1>
-    <form action="Teste">
+    <form action="Teste.js" autocomplete="off" method="post">
         <p>
-            Login: <input type="tel" name="nome" id="nome">
+            <label for="inome">
+                Login: 
+            </label>
+                <input type="tel" name="nome" id="inome">
             <br>
-            Senha: <input type="text" name="senha" id="senha">
+            <br>
+            <label for="isenha">
+                Senha:
+            </label>
+                <input type="text" name="senha" id="isenha">
         </p>
         <p>
-            <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar">  
         </p>
     </form>
 </body>
