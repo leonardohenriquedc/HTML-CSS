@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Outros tipos de form</title>
 </head>
-<body>
+<body id="body" onload="testeHora()">
     <h1>Formularios numericos e outros</h1>
     <form action="Teste.php" method="get" autocomplete="on">
         <p>
@@ -20,9 +20,9 @@
             <label for="imes">Periodo Letivo</label>
             <input type="month" name="mes" id="imes" value="2024-09">
         </p>
-        <p>
-            <label for="data">Data de prova</label>
-            <input type="date" name="data" id="data" value="2024-07-05">
+        <p id="data">
+            <label for="idata">Data de prova</label>
+            <input type="date" name="data" id="idata">
         </p>
         <p>
             <label for="ihora">Horario da prova</label>
@@ -33,5 +33,6 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
 </body>
 </html>
