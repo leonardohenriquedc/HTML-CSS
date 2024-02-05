@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="teste.php" method="get">
+        <p>
+            <input type="number" name="ins" id="in1" placeholder="Digite um valor" required
+            oninput="soma.innerHTML = `${Number(in1.value) + Number(in2.value)}`">
+        </p>
+        <p>
+            <input type="number" name="in2" id="in2" placeholder="Digite outro valor" required
+            oninput="soma.innerHTML = `${Number(in1.value) + Number(in2.value)}`">
+            <output id="soma" style="display: block;">
+                0
+            </output>
+        </p>
+        <p>
+            <input type="range" name="num" id="num" min="0" max="50" value="25"
+            oninput="num2.innerHTML = Number(num.value)">
+            <output id="num2">25</output>
+        </p>
+        <p>
+            <input type="number" name="idd" id="idd" placeholder="Digite seu ano de nascimento" oninput="cal()">
+        </p>
+        <p>
+            <label for="res1">Sua idade é: </label>
+            <output id="res1">0</output>
+        </p>
+
+        <p>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+    <script>
+        function cal(){
+            let atual = new Date().getFullYear()
+            res1.innerHTML = Number(atual) - Number(idd.value)
+        }
+    </script>
+</body>
+</html>

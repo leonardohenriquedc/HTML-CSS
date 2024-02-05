@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="Teste.php" method="get" autocomplete="on">
+        <p>
+            <label for="est">
+                Selecione o seu estado:
+            </label>
+            <select name="esti" id="est">
+                <optgroup label="Norte">
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Pará">Pará</option>
+                    <option value="BL">Belém</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            <label for="pf">Profissão</label>
+            <input type="text" name="prf" id="pf" list="lstdt">
+            <datalist id="lstdt">
+                <option >Administrador</option>
+                <option>Desenvolvedor</option>
+                <option value="DEVW">Desenvolvedor Web</option>
+                <option value="DEVFULL">Desenvolvedor FullStack</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="msg">Mensagem: </label><br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Digite uma Mensagem"></textarea>
+        </p>
+
+        <p>
+           <input type="submit" value="Enviar">
+           <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
