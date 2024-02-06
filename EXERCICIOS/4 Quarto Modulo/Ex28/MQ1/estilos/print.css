@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* Versão CSS para impressoras */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+header ul{
+    display: none;
+}
+
+html{
+    background-color: #946a36;
+}
+
+article::after {
+    content: 'Este e um exemplo do curso em video ';
+}
