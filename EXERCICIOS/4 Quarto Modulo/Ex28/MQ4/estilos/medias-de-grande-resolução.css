@@ -1,1 +1,39 @@
 @charset "UTF-8";
+
+/* Telas Grandes laptops/deskktops */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+    #Img-ph{
+        display: none;
+    }
+
+    #Img-pc{
+        display: block;
+    }
+}
+
+/* Telas Grandes 2*/
+@media screen and (min-width: 1200px){
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    header{
+        background-color: #af7a397e;
+    }
+
+    main{
+        background-color: #af7a397e;
+    }
+
+    #Img-ph{
+        display: none;
+    }
+
+    #Img-tv{
+        display: block;
+    }
+}

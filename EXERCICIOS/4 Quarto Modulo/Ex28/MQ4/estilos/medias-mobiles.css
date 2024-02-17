@@ -1,1 +1,54 @@
 @charset "UTF-8";
+
+
+/*Impressoras*/
+@media print {
+    /* body{
+        background-image: url(../imagens/back-print.jpg);
+    }  Desnecessario */
+
+    #Img-ph{
+        display: none;
+    }
+
+    #Img-imp{
+        display: block;
+    }
+
+    header{
+        border: 2px solid black
+    }
+
+    header h1 {
+        font-family: 'Courier New', Courier, monospace;
+        color: black;
+    }
+
+    main {
+        border: 2px solid black;
+    }
+}
+
+/* Telas Medias */
+@media screen and (min-width: 769px) and (max-width: 992px){
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    header{
+        background-color: #00000041;
+    }
+
+    main{
+        background-color: #00000041;
+    }
+
+    #Img-ph{
+        display: none;
+    }
+    
+    #Img-tablet{
+        display: block;
+    }
+}
+

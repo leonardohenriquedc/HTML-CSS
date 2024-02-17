@@ -8,6 +8,17 @@
     font-size: 1.2em;
 }
 
+/*
+
+    Typical Device breakpoints: 
+        > Extras Pequenas telas: max-width: 600px;
+        > Pequenas Telas: min-width: 600px; 
+        > Telas Medias: min-width: 768px;
+        > Telas largas: min-with: 992px;
+        > Telas Grandes: min-width: 1200px;
+
+*/
+
 html, body{
     width: 100%;
     height: 100%;   
@@ -26,6 +37,8 @@ header{
     margin: auto;
     padding: 10px;
     background-color: #0000006b;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
 }
 
 header > h1{
@@ -38,6 +51,8 @@ main{
     width: 90vw;
     margin: auto;
     padding: 10px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 
 img{
