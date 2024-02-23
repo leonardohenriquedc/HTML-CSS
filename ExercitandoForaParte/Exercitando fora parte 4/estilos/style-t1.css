@@ -83,21 +83,33 @@ main > nav{
     background-color: lightblue;
     width: 100%;
     height: 40px;
+    grid-column: 1;
+    grid-row: 1/2;
+    position: absolute;
 }
 
 main > section{
     background-color: lightgray;
     display: grid;
     justify-content: center;
+    
+}
+
+main > section#secao2{
+    display: none;
 }
 
 main > section > div{
-    display: grip;
+    display: block;
     justify-content: center;
     text-align: center;
-    grid-row: 1;
+    grid-column: 1;
+    gap: 14px;
+    width: 100%;
 }
 
 main > section > div > h2{
     text-align: center;
+    grid-row: 2;
+    
 }
