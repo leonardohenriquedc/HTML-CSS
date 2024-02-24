@@ -78,15 +78,17 @@ header > #nav-other-pages > a:hover{
 
 /* Subs do main */
 
-main > nav{
+main > nav#recomendações{
     background-color: lightblue;
+    width: 100%;
+    height: 50px;
     display: none;
 }
 
 main > section{
     background-color: lightgray;
     display: grid;
-    height: 50vh;
+    height: 70vh;
 }
 
 main > section > div.area-foto{

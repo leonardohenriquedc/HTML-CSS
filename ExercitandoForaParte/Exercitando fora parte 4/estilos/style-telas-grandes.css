@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+@media (min-width: 769px) {
+
+/* Area de corpo */
+    
+body{
+    overflow: scroll;
+}
+
+/* Area do header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > #logo{
+    width: 25vw;
+    margin-left: 10px;
+    padding: 20px;
+}
+
+/* Ocultando Menu Hamburguer */
+header > nav#nav-mobile{
+    display: none;
+}
+/*--------------------------*/
+
+header > nav#nav-other-pages{
+    display: flex;
+    padding: 10px;
+}
+
+header > nav#nav-other-pages > a {
+    margin-left: 10px;
+}
+
+
+/* Area do Main */
+
+/* Reexibindo as areas */
+main > section#secao2{
+    display: grid;
+    margin-top: 3px;
+}
+
+div > h2:nth-child(2){
+    display: block;
+}
+
+main nav#recomendações{
+    display: block;
+}
+
+/*--------------------*/
+
+
+
+
+
+
+
+}
