@@ -11,8 +11,9 @@
 
 /* Corpo do projeto */
 
-Body{
+Body, html{
     overflow: hidden;
+    width: 100vw;
 }
 
 header{
@@ -28,6 +29,7 @@ main{
     width: 100%;
     height: 92vh;
     background-color: darkorange;
+    display: grid;
 }
 
 /* Subs do Header */
@@ -42,11 +44,12 @@ header > h1{
 header > #nav-mobile{
     width: 50px;
     height: 25px;
-    background-color: lightgray;
     margin: 2px auto;
     display: grid;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    padding: 3px;
 }
 
 header > #nav-mobile > .line{
@@ -56,22 +59,29 @@ header > #nav-mobile > .line{
 }
 
 header > #nav-other-pages{
-    display: grid;
+    display: none;
     justify-content: center;
 }
-header > #nav-other-pages > a{
+
+header > #nav-other-pages > ul li{
+    list-style: none;
+    text-align: center;
+    margin: 15px;
+}
+
+header > #nav-other-pages > ul > li a{
+    display: block;
     text-decoration: none;
     font-size: 1.1em;
     text-align: center;
     border: 1px solid #7c2f0c;
-    margin: 2px;
     color: white;
     background-color: #df4f0c;
     padding: 5px;
     border-radius: 3px;
 }
 
-header > #nav-other-pages > a:hover{
+header > #nav-other-pages > ul > li a:hover{
     background-color: #7c2f0c;
     transition: 0.5s;
 }
@@ -88,7 +98,8 @@ main > nav#recomendações{
 main > section{
     background-color: lightgray;
     display: grid;
-    height: 70vh;
+    width: 100%;
+    height: 45vh;
 }
 
 main > section > div.area-foto{
@@ -112,7 +123,6 @@ main > section > div.titulo{
     display: grid;
     justify-content: space-around;
     text-align: center;
-    width: 100%;
     height: 20px;
     margin: 10px;
 }

@@ -23,6 +23,7 @@ function redm(){
     else{
         menu.style.display = 'none'
     }
+    console.log(menu.style.display)
 }
 
 

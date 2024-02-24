@@ -28,7 +28,7 @@ header > nav#nav-mobile{
 }
 /*--------------------------*/
 
-header > nav#nav-other-pages{
+header > nav#nav-other-pages, ul{
     display: flex;
     padding: 10px;
 }
@@ -55,6 +55,46 @@ main nav#recomendações{
 }
 
 /*--------------------*/
+
+main > section#secao1{
+    grid-column: 1;
+    
+}
+
+main > section#secao2{
+    grid-column: 1;
+}
+
+.titulo {
+    display: grid;
+    height: 50px;
+}
+
+div.titulo > h2:nth-child(1){
+    grid-column: 1;
+    grid-row: 1;
+}
+
+div.titulo > h2:nth-child(2){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+
+main > section > div.area-foto{
+    display: grid;
+    justify-content: space-around;
+}
+
+main > section > div.area-foto > div.foto:nth-child(2n){
+    grid-column: 2;
+}
+
+
+
+
+
+
 
 
 

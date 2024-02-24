@@ -1,0 +1,17 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        
+        /* http://localhost:3000 */
+        {
+            "type": "pwa-chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://127.0.0.1:3000/ExercitandoForaParte/Exercitando%20fora%20parte%204/teste1.html",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
